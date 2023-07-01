@@ -1,4 +1,4 @@
-const billAmount = document.getElementById("bill-amount");
+const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");
 const changeButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
@@ -13,11 +13,10 @@ changeButton.addEventListener("click", ()=> {
             calculateNotes(ReturnedMoney);
 
         } else {
-           showMessage("Do you wanna wash a plates?");
+           showErrorMessage("Do you wanna wash a plates?");
         }
-
     } else {
-        showMessage("Invalid Bill Amount");
+        showErrorMessage("Invalid Bill Amount");
     }
 });
 
@@ -30,6 +29,6 @@ function calculateNotes(ReturnedMoney) {
     }
 }
 
-function showMessage(msg) {
+function showErrorMessage(msg) {
      message.innerText = msg;
 }
