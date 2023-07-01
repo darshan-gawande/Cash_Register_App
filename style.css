@@ -2,7 +2,7 @@
     --primary-color:rgb(51, 109, 51);
     --thiery-color: rgb(160, 220, 160);
     --secondary-color: rgb(255, 253, 253);
-    --black: rgb(255, 48, 48);
+    --black: rgb(0, 0, 0);
 }
 .container {
   margin: 4rem auto 7rem;
