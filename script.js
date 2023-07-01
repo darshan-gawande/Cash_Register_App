@@ -7,6 +7,7 @@ const noOfNotes = document.querySelectorAll(".noOfNotes");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 changeButton.addEventListener("click", ()=> {
+    hideMessage();
     if(billAmount.value > 0) {
         if(cashGiven.value >= billAmount.value) {
             const ReturnedMoney = cashGiven.value - billAmount.value;
@@ -30,5 +31,10 @@ function calculateNotes(ReturnedMoney) {
 }
 
 function showErrorMessage(msg) {
+    message.style.display = "block";
      message.innerText = msg;
+}
+
+function hideMessage() {
+    message.style.display = "none";
 }

@@ -1,3 +1,112 @@
+:root {
+    --primary-color:rgb(51, 109, 51);
+    --thiery-color: rgb(160, 220, 160);
+    --secondary-color: rgb(241, 235, 235);
+    --black: rgb(41, 38, 38);
+}
 .container {
+  margin: 4rem auto 7rem;
+  text-align: center;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+}
+
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color:var(--primary-color);
+  min-width: 100vw;
+}
+.heading {
+  color: var(--secondary-color);
+}
+.description {
+  color: var(--secondary-color);
+  font-size: larger;
+  margin: 1rem;
+}
+.input-label {
+  color: var(--secondary-color);
+ display: block;
+ font-size: large;
+ font-weight: 600;
+}
+input {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
+
+}
+#check-button {
+  color: black;
+  background-color: var(--thiery-color);
+  border: none;
+  color: var(--black);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+
+}
+
+#error-message {
+  display: block;
+  font-size: larger;
+  margin: 1rem 0 0;
+
+}
+
+.change-table {
+  color: var(--secondary-color);
+  width: 50%;
+  text-align: justify;
+  border-collapse: collapse;
+  margin: auto;
+}
+.change-table caption {
+  margin: 1rem auto;
+  font: larger;
+  font-weight: 500;
   
 }
+table {
+  display: table;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+caption {
+  display: table-caption;
+  text-align: -webkit-center;
+}
+tbody {
+  color: var(--secondary-color);
+  display: table-row-group;
+  vertical-align: middle;
+}
+
+th,td {
+  border: 2px solid var(--secondary-color);
+  width: 0%;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
