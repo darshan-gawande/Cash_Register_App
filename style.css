@@ -1,8 +1,8 @@
 :root {
     --primary-color:rgb(51, 109, 51);
     --thiery-color: rgb(160, 220, 160);
-    --secondary-color: rgb(241, 235, 235);
-    --black: rgb(41, 38, 38);
+    --secondary-color: rgb(255, 253, 253);
+    --black: black;
 }
 .container {
   margin: 4rem auto 7rem;
@@ -15,10 +15,11 @@
 }
 
 main {
-  display: block;
+  display: flex;
 }
 
 body {
+  display: flex;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   background-color:var(--primary-color);
@@ -64,9 +65,9 @@ input {
 
 #error-message {
   display: block;
-  font-size: larger;
+  color: var(--black);
+  font-size: xx-large;
   margin: 1rem 0 0;
-
 }
 
 .change-table {
@@ -76,9 +77,10 @@ input {
   border-collapse: collapse;
   margin: auto;
 }
+
 .change-table caption {
   margin: 1rem auto;
-  font: larger;
+  font-size: x-large;
   font-weight: 500;
   
 }
@@ -97,12 +99,16 @@ tbody {
   display: table-row-group;
   vertical-align: middle;
 }
+.noofNotes {
+  background-color: var(--secondary-color);
+}
 
 th,td {
   border: 2px solid var(--secondary-color);
   width: 0%;
   border-collapse: collapse;
-  padding: 0.4rem;
+  padding: 0.6rem;
+  
 }
 tr {
   display: table-row;
